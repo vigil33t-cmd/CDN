@@ -1,6 +1,7 @@
-
 /*Thanks Nyria#3863 for the best theme layout ever!*/
 @import url("https://nyri4.github.io/LilyPichu/main.css");
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 
 html {
     font-family: "Nunito" !important;
@@ -9,6 +10,9 @@ html {
 :root {
     --background-tertiary-alt: url("https://cdn.jsdelivr.net/gh/vigil33t-cmd/CDN@master/css/background.jpg");
     --border-radius: 20px;
+    --server-listing-width: 126px --HSL-server-icon-size: 64px;
+    --HSL-server-spacing: 10px;
+    --HSL-server-direction: column-reverse;
 }
 
 :root .app-3xd6d0::before,
@@ -21,6 +25,19 @@ html {
 :root .bg-1QIAus::after,
 :root .bg-1QIAus::before {
     display: none;
+}
+
+#bd-pub-li {
+    display: none;
+}
+
+#app-mount .guilds-2JjMmN {
+    height: 70vw !important;
+    left: 70vw !important;
+}
+
+.wrapper-2RrXDg {
+    background-color: rgba(200, 200, 200, .1)
 }
 
 .bg-1QIAus {
@@ -44,12 +61,24 @@ html {
     }
 }
 
+@media (max-width: 1350px) {
+    #app-mount .guilds-2JjMmN {
+        height: 100vw !important;
+        left: 100vw !important;
+    }
+}
+
 :root .membersWrap-3NUR2t::before {
     content: "Список участников";
 }
 
 .list-2x9Cl9 {
     counter-reset: section;
+}
+
+.platform-win .layer-86YKbF {
+    top: 0;
+    padding: 0;
 }
 
 .list-2x9Cl9>.draggable-S2aEx4>.voiceUser-3nRK-K>.content-1Tgc42::before {

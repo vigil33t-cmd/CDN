@@ -1,1 +1,161 @@
 
+/*Thanks Nyria#3863 for the best theme layout ever!*/
+@import url("https://nyri4.github.io/LilyPichu/main.css");
+
+html {
+    font-family: "Nunito" !important;
+}
+
+:root {
+    --background-tertiary-alt: url("https://psv4.userapi.com/c534536/u401950349/docs/d13/920682dd7b25/output.jpg?extra=c2sDWqM5Jun2deFxe69vGuAvqJMeL58xSVLQN7jeMf5Gn1yp9j5l0mq2GszyJo3O8elEsowPI3aTJgQs_pknTA0jcaOvDysgawN4ATtSgDqNA509PSg_TGw7VSxn5zpgAeI4U9BIvvH70R9N7LdnqA");
+    --border-radius: 20px;
+}
+
+:root .app-3xd6d0::before,
+:root .app-3xd6d0::after,
+:root .app-2CXKsg::after,
+:root .app-2CXKsg::before,
+:root .layers-OrUESM::before,
+:root .layers-OrUESM::after,
+:root .app-3xd6d0::before,
+:root .bg-1QIAus::after,
+:root .bg-1QIAus::before {
+    display: none;
+}
+
+.bg-1QIAus {
+    filter: blur(4px);
+}
+
+.userAvatar-3Hwf1F {
+    /* box-shadow: 0 0 0 1px hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%),inset 0 0 0 3px var(--background-secondary); */
+    background-color: var(--background-floating);
+}
+
+.avatarSpeaking-33RRJU,
+.avatarSpeaking-2pCGrZ {
+    box-shadow: inset 0 0 0 2px var(--channels-default), inset 0 0 0 3px var(--background-secondary);
+}
+
+@media (min-width: 1350px) {
+    .container-1eFtFS::after {
+        content: "Хули палишь?";
+        background-color: var(--background-primary);
+    }
+}
+
+:root .membersWrap-3NUR2t::before {
+    content: "Список участников";
+}
+
+.list-2x9Cl9 {
+    counter-reset: section;
+}
+
+.list-2x9Cl9>.draggable-S2aEx4>.voiceUser-3nRK-K>.content-1Tgc42::before {
+    counter-increment: section 1;
+    content: counter(section) ".";
+    color: var(--header-primary);
+    padding: 4px;
+    margin: 0;
+    padding-right: 2em;
+    margin-left: -2em;
+    border-right: var(--header-primary) 1px solid;
+}
+
+.border-2Vy6FN.speaking-7QZEkv {
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px var(--channels-default), inset 0 0 0 3px #000 !important;
+}
+
+.theme-dark {
+    --text-normal: #fff;
+    --header-primary: #ce5a36;
+    --interactive-normal: #ce5a36;
+    --channels-default: #ce5a36;
+
+    --text-muted: #ce5a36;
+    --interactive-muted: #ce5a36;
+
+    --header-secondary: #ce5a36;
+    --interactive-hover: #cc6343;
+    --interactive-active: #c05332;
+
+    --background-primary: #1f1f1fc9;
+    --background-secondary: #242424;
+    --background-secondary-alt: #242424;
+    --background-tertiary: #1f1f1f;
+    --background-floating: #221115;
+    --background-accent: #ce5a36;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: #cc63438e;
+    --background-modifier-active: #cc63437e;
+    --background-modifier-selected: #ce593677;
+    --toast-background: #ce5a36 !important;
+    --toast-header: #ce5a36 !important;
+    --toast-contents: #ce5a36 !important;
+    --toast-border: #ce5a36 !important;
+
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+
+.colorBrand-ROmMP1 {
+    color: #ce5a36;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+.lookFilled-1Gx00P {
+    background-color: #c5536c !important;
+}
+
+.lookFilled-1Gx00P:active,
+.lookFilled-1Gx00P:hover {
+    background-color: #b64a61 !important;
+}
+
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) {
+    color: #c5536c;
+    border-color: #c5536c;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    color: var(--interactive-normal);
+}
+
+.colorBrand-ROmMP1 {
+    color: #ce5a36;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+.lookFilled-1Gx00P {
+    background-color: #ce5a36 !important;
+}
+
+.lookFilled-1Gx00P:active,
+.lookFilled-1Gx00P:hover {
+    background-color: #ce5a36 !important;
+}
+
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) {
+    color: #ce5a36;
+    border-color: #ce5a36;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    color: var(--interactive-normal);
+}
